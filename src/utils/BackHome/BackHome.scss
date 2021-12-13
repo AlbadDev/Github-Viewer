@@ -1,0 +1,30 @@
+.back_section {
+    margin-top: 15px;
+    .back_link {
+        position: relative;
+        font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        border: none;
+        background-color: #1d77e6;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 1rem;
+        border: none;
+    }
+    .back_link::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -36px;
+        width: 0;
+        height: 0;
+        display: inline-block;
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent;
+        border-right: 18px solid #1d77e6;
+        border-left: 18px solid transparent;
+    }
+}

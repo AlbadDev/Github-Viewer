@@ -1,0 +1,67 @@
+.sectionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(246, 248, 250);
+
+    .repoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        max-width: 1200px !important;
+        min-width: 250px;
+        background-color: rgb(246, 248, 250);
+        
+            .chartInfo {
+                margin-top: -4rem !important;
+                margin-bottom: 100px;
+                display: block;
+                background-color: rgb(255, 255, 255);
+                color: rgb(36, 41, 46);
+                max-width: 500px;
+                border-radius: 5px;
+                box-shadow:rgb(0 0 0 / 30%) 0px 5px 30px -15px ;
+                width: 360px;
+                height: 100%;
+                padding: 2rem ;
+                
+                header {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    height: 30px;
+                    padding-left: 10px;
+                    margin-bottom: 15px;
+                    background-color: rgb(255, 255, 255);
+
+                    h2 {
+                        font-family: Karla, Helvetica, Verdana, sans-serif;
+                        line-height: 1.6667;
+                        padding-bottom: 10px;
+                        font-size: 36px;
+                        background-image: linear-gradient(90deg, rgb(209, 213, 218) 50%, rgba(255, 255, 255, 0) 2px);
+                        background-color: rgb(255, 255, 255);
+                        background-position: center bottom;
+                        background-repeat: repeat-x;
+                        background-size: 10px 2px;
+                        padding-bottom: 10px;
+                        font-weight: 500;
+                    }
+                }
+                .chart {
+                    padding: 20px;
+                    margin-top: 5px;
+                    background-color: rgb(255, 255, 255);
+                    canvas {
+                        background-color: white;
+                    } 
+                }
+            }
+        
+    }
+}

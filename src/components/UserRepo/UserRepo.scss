@@ -1,0 +1,255 @@
+
+.icon {
+    background-color: transparent;
+}
+.homeContainer {
+    background-color: #f6f8fa;
+    color: rgb(65, 65, 65);
+    padding: 3rem;
+    // padding-left: 10rem;
+    .repoContainer {
+        max-width: 1400px;
+        margin: 0px auto;
+        background-color: inherit;
+       @media (min-width: 768px) {
+        .header {
+            margin-left: 110px;
+        }
+       } 
+        .repoHeader {
+            display: flex;
+            align-items: center;
+            -webkit-box-align: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            background-color: inherit;
+
+            h2 {
+                display: inline-block;
+                margin: 0px;
+                font-size: 1.75rem;
+                padding-bottom: 6px;
+                background-color: inherit;
+            }
+            p {
+                overflow: hidden;
+            }
+            label {
+                margin: 0 1rem;
+            }
+            .dropdownContainer {
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+                color: rgb(106, 115, 125);
+                background-color: inherit;
+
+                span {
+                    margin: 0px 1rem;
+                    background-color: transparent;
+                }
+
+                .dropdown {
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: 500;
+                    background: rgba(24, 104, 196, 0.185) none repeat scroll 0% 0%;
+                    select {
+                        width: 100px;
+                        height: 40px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        background-color: rgb(246,248,250);
+                       
+                        option {
+                            background-color:  rgb(246,248,250);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*..................Start RepoList Style.........................*/
+
+.repoList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    a {
+        display: block;
+        //flex-grow: 1;
+        
+         text-decoration: none;
+         background-color: rgb(246, 248, 250);
+         width: 300px;
+         height:230px;
+        }
+        @media (max-width: 760px ){
+            a {
+                width: 310px;
+            }
+        } 
+    .repoListContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 0.1;
+            background-color: rgb(246, 248, 250);
+            align-items: center;
+            padding: 25px;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-bottom: 15px;
+            width: 320px;
+            height: 230px;
+            //min-width: 280px;
+            .repo_top {
+                display: block;
+                .repo_name {
+                    display: block;
+                    align-items: center;
+                    background-color: rgb(246, 248, 250);
+
+                    .repoHeader {
+                        display: flex;
+                        align-items: center;
+                        padding-left: 5px;
+                    }
+                    h3 {                  
+                        padding-left: 10px;
+                        padding-top: 3px;
+                        height: 20px;
+                        font-size: 18px;
+                        flex-wrap: wrap;
+                        overflow:hidden;
+                        text-align: left;
+                        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+                        background-color: rgb(246, 248, 250);
+                        color: rgb(36, 41, 46);
+                        text-decoration: none;
+                    }
+                      p {
+                        display: flex;
+                        flex-wrap: wrap;
+                        text-align: left;
+                        height: 95px;
+                        overflow: hidden;
+                        padding: 10px;
+                        margin-bottom: 40px;
+                        margin-top: -20px;
+                        font-size: 18px;
+                        font-family: Inter, system, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arial, sans-serif;
+                        line-height: 1.5;
+                        color: rgb(88, 96, 105);
+                        background-color: rgb(246, 248, 250);
+                }
+                   
+            }
+
+              
+        }
+    
+        
+        .repo_stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: inherit;
+            margin-top: -10px;
+
+            .repo_stats_left {
+                display: flex;
+                background-color: inherit;
+                span {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 13px;
+                    margin:8px;
+                    color: rgb(106, 115, 125);
+                    background-color: inherit;
+    
+                    svg {
+                        background-color: transparent;
+                        margin-right: 2px;
+                        margin-top: 3px;
+                        //color: currentColor;
+                        color: rgb(106, 115, 125);
+                        fill: currentColor;
+                        vertical-align: text-bottom;
+                    }
+                    .language {
+                        margin-right: 5px;
+                        background-color: rgb(166, 221, 16);
+                    }
+                }
+            }
+    
+            .repo_stats_right {
+                background-color: inherit;
+                padding-right: 10px;
+                span {
+                    background-color: inherit;
+                    color: rgb(106, 115, 125);
+                }
+            }
+        }
+        
+    
+    }
+
+    .repoListContainer:hover {
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        padding: 2px;
+
+        .repoHeader {
+            margin-top: 10px;
+            margin-bottom: -20px;
+        }
+        .repoHeader h3 {
+            height: 66px;
+            font-size: 22px;
+           
+        }
+        .repoHeader .icon {
+            margin-top: -40px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: inherit;
+    margin-bottom: 0;
+    margin-top: 25px;
+    span {
+        background-color: inherit;
+        color: rgb(106, 115, 125);
+        text-align: center;
+        font-weight: 500;
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    a {
+        text-decoration: none;
+        transition: all 0.2s ease-in-out 0s;
+        color: rgb(0, 112, 243);
+        background-color: inherit;
+        display: inline-block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 22px;
+        margin-right: 10px;
+    }
+}

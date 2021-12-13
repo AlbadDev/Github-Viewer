@@ -1,0 +1,67 @@
+.homeContainer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+    color: white;
+}
+.homePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    .homeFormLabel {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin: 2rem;
+    }
+    .HomeInput {
+        text-align: center;
+        background-color: #27313C;
+        max-width: 500px;
+        min-width: 100px;
+        padding: 1rem;
+        color: rgb(121, 184, 255);
+        font-size: 2rem;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        margin-bottom: 50px;
+        border: none;
+    }
+    .homeButton {
+        background-color: #3c4d40;
+        color: rgb(0, 112, 243);
+        max-width: 500px;
+        min-width: 200px;
+        padding: 1rem;
+        font-size: 2rem;
+        margin-top: -8.6px;
+        margin-left: auto;
+        border: none;
+        
+    }
+    
+}
+.homePage form svg {
+        color:  rgb(0, 112, 243);
+    }
+
+
+@media (max-width: 700px) {
+    .homePage {
+        .HomeInput {
+            width: 350px;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .homePage {
+        .HomeInput {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+

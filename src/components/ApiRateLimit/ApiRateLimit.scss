@@ -1,0 +1,37 @@
+.rateLimit_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    position: relative;
+
+
+    .limit {
+        margin: 0px 0px 0px 10px;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-size: 1rem;
+        color: rgba(200, 225, 255, 0.281);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        background-color: transparent;
+
+        .num {
+            color: grey;
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 1px;
+            margin: 0;
+            background-color: transparent;
+            color: rgb(87, 86, 86);
+        }
+   }
+   
+}

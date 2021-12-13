@@ -1,0 +1,121 @@
+
+.loading {
+    color: whitesmoke;
+}
+.back {
+    display: flex;
+    margin-left: 25px;
+}
+.headSection {
+    height: 100%;
+}
+.userInfoContainer {
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    text-align: center;
+    
+    .avatarContainer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+        margin-top: 10px;
+        img {
+            width: 170px;
+            height: 100%;
+            border-radius: 50%;
+            border: 5px solid #1d77e6;
+            vertical-align: middle;
+        }
+       
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #ffff;
+    }
+    h2{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-size: 1rem;
+        color: #1d77e6;
+    }
+    .accountInfo {
+        justify-content: center;
+        -webkit-box-pack: center;
+        align-items: center;
+        color: rgb(200, 225, 255);
+        
+
+        .info_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+            margin-right: 1rem;
+            margin-bottom: 0.5rem;
+            margin-left: 1rem;
+            white-space: nowrap;
+            width: 165px;
+            overflow: hidden;
+        }
+    
+    }
+    /*............Start Media Query..................*/
+
+    @media (min-width: 700px){
+        h2 {
+            font-size: 30px;
+        }
+        .accountInfo{
+            display: flex;
+        }
+        
+    }
+    @media (max-width: 700px){
+        
+        .accountInfo{
+            .info_item {
+                font-weight: 20px ;
+            }
+        }
+    }
+
+    /*............End Media Query..................*/
+
+    .infoState {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 150px));
+        grid: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        padding: 10px;
+        .state_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 15px;
+            background-color: rgb(36, 41, 46);
+            border-radius: 0.25rem;
+            margin-right: .30rem;
+            color: rgb(200, 225, 255);
+            font-size: 8px;
+            letter-spacing: 1px;
+            font-family:"BlinkMacSystemFont", sans-serif, Inter, system, -apple-system, BlinkMacSystemFont, Roboto ;
+            .numSpan {
+                background-color: transparent;
+                font-size: 20px;
+            }
+            .secondSpan {
+                color: rgb(91, 131, 180);
+                background-color: transparent;
+                font-size: 9px;
+            }
+        }
+    }
+
+}
+
+

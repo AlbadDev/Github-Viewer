@@ -1,0 +1,29 @@
+
+.section_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    header {
+        display: flex;
+        flex-direction: column;
+        .github_image svg {
+            color:  rgb(0, 112, 243);
+        }
+        .logo_text {
+            color: whitesmoke;
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin: 2rem;
+        }
+
+    }
+    article {
+        h6 {
+           color: rgb(246, 248, 250);
+            line-height: 1.5;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+    }
+}
