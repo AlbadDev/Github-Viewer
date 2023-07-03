@@ -35,6 +35,7 @@ export default function UserRepo({userSearch}) {
 
     /*.....................Start Sort repositorie by start fork or size ...................*/
     const sortRepoFunc = useCallback( type => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         const sortObject = {
             star : 'stargazers_count',
             forks : 'forks_count',
@@ -46,10 +47,10 @@ export default function UserRepo({userSearch}) {
             .sort((a, b) => {
                 return  b[sortByType] - a[sortByType]     
             })
-    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
            setTopRepos(sortedRepo)
            // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    })
     /*.....................End Sort repositorie by start fork or size ...................*/
     
     const changeRepoSort = e => {
