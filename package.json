@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "NODE_ENV=production react-scripts --warning=error --openssl-legacy-provider build",
+    "build": "CI=true react-scripts build --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
