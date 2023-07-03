@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useCallback} from 'react'
 import './UserRepo.scss'
 import { langColors } from '../../utils/LangColor'
 import { RepoIcon } from '@primer/octicons-react'
@@ -34,7 +34,7 @@ export default function UserRepo({userSearch}) {
 
 
     /*.....................Start Sort repositorie by start fork or size ...................*/
-    const sortRepoFunc = type => {
+    const sortRepoFunc = useCallback( type => {
         const sortObject = {
             star : 'stargazers_count',
             forks : 'forks_count',
@@ -48,7 +48,7 @@ export default function UserRepo({userSearch}) {
             })
     
            setTopRepos(sortedRepo)
-    }
+    }, [])
     /*.....................End Sort repositorie by start fork or size ...................*/
     
     const changeRepoSort = e => {
@@ -64,8 +64,9 @@ export default function UserRepo({userSearch}) {
             setComponentMount(true)
         }
      })
-
-     useEffect(() => sortRepoFunc(sortType), [sortType])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+     useEffect(() => sortRepoFunc(sortType),[sortRepoFunc, sortType])
+     
 
     //  console.log('My Status Code ',Error)
     return (
