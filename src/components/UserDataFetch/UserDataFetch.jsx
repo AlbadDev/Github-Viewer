@@ -115,9 +115,9 @@ export default function UserDataFetch () {
                 }
                 </div>
               <LangData />                  
-              </section> : (Error.type === 403) && <Error403 setError={setError}/>
-                || (Error.type === 404) && <Error404 /> 
-                || <Error400 />
+              </section> : (Error.type === 403) ? <Error403 setError={setError}/>
+                : (Error.type === 404) ? <Error404 /> 
+                : <Error400 />
                 
             }
 

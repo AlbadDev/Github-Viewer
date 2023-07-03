@@ -13,7 +13,7 @@ export default function LangData () {
     const [repoData, setRepoData] = useState([])
     const [langData, setLangData] = useState([])
     const [errorPolyglot, setErrorPolyglot] = useState(false)
-    const [Error, setError] = useState({active:false, type: 200})
+    const [ setError] = useState({active:false, type: 200})
     
     
     
@@ -133,6 +133,7 @@ export default function LangData () {
             return () => {
                 componentMount = true
             }
+            // eslint-disable-next-line react-hooks/exhaustive-deps
         },[userSearch]) 
 
 

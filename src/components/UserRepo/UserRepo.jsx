@@ -48,6 +48,7 @@ export default function UserRepo({userSearch}) {
             })
     
            setTopRepos(sortedRepo)
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     /*.....................End Sort repositorie by start fork or size ...................*/
     
@@ -57,15 +58,20 @@ export default function UserRepo({userSearch}) {
 
     
     useEffect(() => {
+         // eslint-disable-next-line react-hooks/exhaustive-deps
         if(!componentMount){
             repoDataFetch(userSearch)
         }
         return () => {
             setComponentMount(true)
         }
-     })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-     useEffect(() => sortRepoFunc(sortType),[sortRepoFunc, sortType])
+         // eslint-disable-next-line react-hooks/exhaustive-deps
+     },[])
+    
+     useEffect(() => 
+        sortRepoFunc(sortType)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        ,[ sortType])
      
 
     //  console.log('My Status Code ',Error)

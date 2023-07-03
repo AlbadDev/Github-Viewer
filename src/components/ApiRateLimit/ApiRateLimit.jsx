@@ -21,6 +21,7 @@ export default function ApiRateLimit({setError}) {
 
     useEffect(() => {
         rateLimitFunc()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     return (
