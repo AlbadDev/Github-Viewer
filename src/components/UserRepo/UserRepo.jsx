@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback} from 'react'
+import React, {useState, useEffect} from 'react'
 import './UserRepo.scss'
 import { langColors } from '../../utils/LangColor'
 import { RepoIcon } from '@primer/octicons-react'
